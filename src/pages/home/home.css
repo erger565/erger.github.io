@@ -1,0 +1,52 @@
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.page .wrapper {
+  width: 100%;
+}
+
+.page .wrapper h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 2rem;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+.page .wrapper p {
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.page .wrapper p.desktop {
+  display: inline-block;
+}
+
+.page .wrapper p.mobile {
+  display: none;
+}
+
+@media only screen and (max-width : 1024px) {
+  .page .wrapper p.mobile {
+    display: inline-block;
+  }
+
+  .page .wrapper p.desktop {
+    display: none;
+  }
+  .page .wrapper h1 {
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+  }
+}

@@ -1,0 +1,44 @@
+.game-frame-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.game-frame-wrapper.pause  {
+  filter: blur(4px);
+  -webkit-transition: filter 0.5s; /* Safari */
+  transition: filter 0.5s;
+}
+
+.game-frame {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.tappable-controls {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.tappable-controls .left {
+  float: left;
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  z-index: 17;
+  opacity: 0.1;
+}
+
+.tappable-controls .right {
+  float: right;
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  z-index: 17;
+  right: 0;
+  opacity: 0.1;
+}
